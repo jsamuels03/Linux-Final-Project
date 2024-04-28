@@ -35,4 +35,13 @@ int main(int argc, char* argv[]){
       cipherWord += ch;
     }
   }
+  int L = cipherWord.length();
+  for (int i = 0; i < N; i++){
+    if(i % 5 == 0){
+      cout << " ";
+    }
+    cout << cipherWord[i];
+  }
+  cout << endl;
+  return 0;
 }
